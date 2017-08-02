@@ -22,7 +22,10 @@ const UserSchema = mongoose.Schema({
 	password: {
 		type: String,
 		required: true,
-	}
+	},
+	posts: [
+		PostSchema,
+	],
 });
 
 UserSchema.pre('save', function(next) {

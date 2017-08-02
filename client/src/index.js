@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import SignIn from './components/signin';
+import SignUp from './components/signup';
+import SignOut from './components/signout';
+import Forums from './components/forums';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
@@ -25,6 +29,6 @@ ReactDOM.render(
 				<Route path="/forums" component={Forums} />
 			</div>
 		</Router>
-	</Provider>
+	</Provider>,
 	document.getElementById('root')
 );
