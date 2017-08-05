@@ -20,7 +20,7 @@ const getForums = (req, res) => {
 const getPosts = (req, res) => {
 	Forums.find({}, (err, forum) => {
 		if (err) return res.send(err);
-		res.send()
+		res.send(forum);
 	});
 };
 

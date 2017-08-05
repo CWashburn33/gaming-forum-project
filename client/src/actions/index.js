@@ -5,6 +5,7 @@ export const USER_AUTHENTICATED = 'USER_AUTHENTICATED';
 export const USER_UNAUTHENTICATED = 'USER_UNAUTHENTICATED';
 export const AUTHENTICATION_ERROR = 'AUTHENTICATION_ERROR';
 export const GET_FORUMS = 'GET_FORUMS';
+export const NEW_FORUM = 'NEW_FORUM';
 export const SET_ACTIVE_FORUM = 'SET_ACTIVE_FORUM';
 
 export const authError = (error) => {
